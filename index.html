@@ -4,10 +4,10 @@
     <style class="cp-pen-styles">body, input {font-size:18pt}
     input, label {vertical-align:middle}
     .qrcode-text {padding-right:1.7em; margin-right:0}
-    .qrcode-text-btn {display:inline-block; height:1em; width:1.7em; margin-left:-1.7em; cursor:pointer}
+    .qrcode-text-btn {display:inline-block; background:url(/img/qr_icon.svg) 50% 50% no-repeat; height:1em; width:1.7em; margin-left:-1.7em; cursor:pointer}
     .qrcode-text-btn > input[type=file] {position:absolute; overflow:hidden; width:1px; height:1px; opacity:0}
     </style></head><body>
-       <p><b> QR コード リーディングチェック </b></p>
+       <p><b> QR コード リーディングチェック </b>b></p>
     <input type="text" size="16" placeholder="Tracking Code" class="qrcode-text"><label class="qrcode-text-btn"><input type="file" accept="image/*" capture="environment" onchange="openQRCamera(this);" tabindex="-1"></label> 
     <input type="button" value="Go" disabled="">
     <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script><script src="https://dmla.github.io/jsqrcode/src/qr_packed.js"></script>
