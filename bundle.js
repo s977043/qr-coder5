@@ -155,7 +155,7 @@
 	      } else {
           if (this.state.result != null ) {
 
-//            alert(this.state.result);
+            alert(this.state.result);
 //            fetch("https://holidays-jp.github.io/api/v1/date.json")
             fetch( this.state.result )
               .then(response => {
