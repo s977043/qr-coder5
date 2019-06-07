@@ -153,15 +153,22 @@
 	          )
 	        );
 	      } else {
-          if (this.state.result != null ) {
+          if (this.state.result != "No result" ) {
 
-            alert(this.state.result);
+            alert(  this.state.result  );
 //            fetch("https://holidays-jp.github.io/api/v1/date.json")
-            fetch( this.state.result )
-              .then(response => {
-                return response.json();
-              })
-          };
+/*
+			// 非同期でアクセスのみする（画面遷移しない）
+			fetch( this.state.result )
+				.then(response => {
+				return response.json();
+			})
+*/
+			// 同期で画面遷移する
+//				this.props.history.push(this.state.result)
+//				window.open(this.state.result, '_blank');
+				window.location.href = this.state.result;
+			};
 	        return _react2.default.createElement(
 	          'div',
 	          null,
