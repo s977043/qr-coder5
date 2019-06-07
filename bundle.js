@@ -154,7 +154,6 @@
 	        );
 	      } else {
           if (this.state.result != "No result" ) {
-
             alert(  this.state.result  );
 //            fetch("https://holidays-jp.github.io/api/v1/date.json")
 /*
@@ -167,6 +166,8 @@
 			// 同期で画面遷移する
 //				this.props.history.push(this.state.result)
 //				window.open(this.state.result, '_blank');
+//				window.location.assign = location.href;
+				window.history.pushState({name : 'QRコード検証'}, null,  location.href);
 				window.location.href = this.state.result;
 			};
 	        return _react2.default.createElement(
